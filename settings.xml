@@ -1,0 +1,26 @@
+<settings>
+    <servers>
+        <server>
+            <id>dealshare-jwt-library</id>
+            <username>aws</username>
+            <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+        </server>
+    </servers>
+    <profiles>
+        <profile>
+            <id>dealshare-jwt-library</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>dealshare-jwt-library</id>
+                    <url>https://dealshare-997477333591.d.codeartifact.us-east-1.amazonaws.com/maven/jwt-library/</url>
+                </repository>
+            </repositories>
+    	</profile>
+    </profiles>
+    <activeProfiles>
+        <activeProfile>dealshare-jwt-library</activeProfile>
+    </activeProfiles>
+</settings>

@@ -22,6 +22,21 @@
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
   </properties>
 
+  <dependencies>
+		<dependency>
+			<groupId>org.dealshare</groupId>
+			<artifactId>jwt-library</artifactId>
+			<version>1.38_QA</version>
+		</dependency>
+	</dependencies>
+
+  <repositories>
+		<repository>
+			<id>dealshare-jwt-library</id>
+			<name>dealshare-jwt-library</name>
+		        <url>https://dealshare-997477333591.d.codeartifact.us-east-1.amazonaws.com/maven/jwt-library/</url>
+		</repository>
+	</repositories>
   <build>
     <plugins>
       <plugin>
